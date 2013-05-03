@@ -1,4 +1,4 @@
 Survey Helper
 =============
 
-A Chrome extension to make people fill STUST teaching survey more convenient.
+A Chrome extension to fill STUST teaching survey automatically. 
