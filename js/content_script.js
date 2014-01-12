@@ -1,6 +1,6 @@
 ﻿switch (window.location.hostname) {
 	case 'identity.stust.edu.tw':
-		alert('請先登入您的南台帳戶');
+		//login first
 		break;
 
 	case 'eportal.stust.edu.tw':
@@ -17,14 +17,14 @@
 						target,
 						i;
 
-					for (i = 0; i < count + 1; i++) {
+					for (i = 0; i <= count; ++i) {
 						if (i === count) {
-							if (confirm('全部搞定啦！\n要帶你到成績頁面嗎？A__A')) {
+							if (confirm('全部搞定啦！\n\n要帶你到成績查詢頁面嗎？A__A')) {
 								document.location.href = 'http://120.117.2.28/CourSel/Pages/PresentScore.aspx';
 							}
 							break;
 						}
-						target = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr:eq('+ i +') ').find(':submit');
+						target = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr:eq('+ i +')').find(':submit');
 						if (target.prop('disabled')) {
 							continue;
 						}else{
@@ -41,6 +41,18 @@
 					$(':submit').click();
 				}
 				break;
+
+			default:
+				if (confirm('糟糕！我迷路啦( TДT)\n按確定後此分頁會自動關閉，請再重試一次\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
+					open(location, '_self').close();
+				}
+				break;
+		}
+		break;
+
+	default:
+		if (confirm('糟糕！我迷路啦( TДT)\n按確定後此分頁會自動關閉，請再重試一次\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
+			open(location, '_self').close();
 		}
 		break;
 }
