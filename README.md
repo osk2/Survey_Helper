@@ -3,4 +3,16 @@ Survey Helper
 
 A Chrome extension to fill STUST teaching survey automatically. 
 
-For more detail please visit http://osk2.pixnet.net/blog/post/30571722
+## Changelog ##
+
+`v1.1.0`
+
+- rewrite content_script.js
+
+`v1.0.1`
+
+- first release
+
+## License ##
+
+This software is licenced under the GNU v2. Please read LICENSE for information.
