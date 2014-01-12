@@ -1,7 +1,7 @@
 ﻿{
     "name": "問卷助手︰南台科大版",
 	"manifest_version": 2,
-    "version": "1.1.0", 
+    "version": "1.1.1", 
     "description": "我給老師滿分！",
     "icons": {
         "16": "icons/icon_16.png",
