@@ -1,39 +1,46 @@
-﻿var n_count,t_count,btn_count,btns_count;
-$(document).ready(function(){
-	if($("#ctl00_ContentPlaceHolder1_btnCancel").length==0){//用「取消填寫」按鈕判斷網頁問卷清單或是問卷
-		for(btn_count=0;btn_count<=9;btn_count++){
-			if($("#ctl00_ContentPlaceHolder1_dlPollStatus_ctl0"+btn_count+"_ToPoll")){
-				$("#ctl00_ContentPlaceHolder1_dlPollStatus_ctl0"+btn_count+"_ToPoll").click();
-			}else{
-				for(btns_count=10;;btns_count++){
-					if($("#ctl00_ContentPlaceHolder1_dlPollStatus_ctl"+btns_count+"_ToPoll")){
-						$("#ctl00_ContentPlaceHolder1_dlPollStatus_ctl"+btns_count+"_ToPoll").click();
-					}else{
-						alert("太好了，問卷都填完啦！");
-						break;
+﻿switch (window.location.hostname) {
+	case 'identity.stust.edu.tw':
+		alert('請先登入您的南台帳戶');
+		break;
+
+	case 'eportal.stust.edu.tw':
+		switch (window.location.pathname.replace(/^.*\/([^/]*)/, "$1")) {
+			case 'MainPage.aspx':
+				//login page
+				document.location.href = 'Stud_Feedback.aspx';
+				break;
+
+			case 'Stud_Feedback.aspx':
+				if ($("#ctl00_ContentPlaceHolder1_btnCancel").length == 0) {
+					//survey list
+					var count = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr').length,
+						target,
+						i;
+
+					for (i = 0; i < count + 1; i++) {
+						if (i === count) {
+							if (confirm('全部搞定啦！\n要帶你到成績頁面嗎？A__A')) {
+								document.location.href = 'http://120.117.2.28/CourSel/Pages/PresentScore.aspx';
+							}
+							break;
+						}
+						target = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr:eq('+ i +') ').find(':submit');
+						if (target.prop('disabled')) {
+							continue;
+						}else{
+							target.click();
+							break;
+						}
 					}
+				}else{
+					//in survey
+					$(':radio[value=5]').prop('checked',true);
+					if ($(':checkbox').length > 0) {
+						$(':checkbox').prop('checked',true);
+					}
+					$(':submit').click();
 				}
-			}
+				break;
 		}
-	}else{
-		if($("#ctl00_ContentPlaceHolder1_lblSub_name").text()=="導師時間"){        
-		    for(t_count=1;t_count<=9;t_count++){
-		        $("#ctl00_ContentPlaceHolder1_0"+t_count+"_0").attr("checked",true);
-		    }
-		    $("#ctl00_ContentPlaceHolder1_10_0").attr("checked",true);
-		}else{
-		    for(n_count=1;n_count<=4;n_count++){
-		        $("#ctl00_ContentPlaceHolder1_A"+n_count+"_0").attr("checked",true);
-		    }
-		    for(t_count=1;t_count<=11;t_count++){
-		        if($("#ctl00_ContentPlaceHolder1_0"+t_count+"_0")!=undefined){
-					$("#ctl00_ContentPlaceHolder1_0"+t_count+"_0").attr("checked",true);
-		        }
-		    }
-		    $("#ctl00_ContentPlaceHolder1_03-A_0").attr("checked",true); 
-		    $("#ctl00_ContentPlaceHolder1_10_0").attr("checked",true);
-		    $("#ctl00_ContentPlaceHolder1_11_0").attr("checked",true);
-		}
-		$("#ctl00_ContentPlaceHolder1_SubmitPoll").click()
-	}
-})
+		break;
+}
