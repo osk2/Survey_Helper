@@ -10,6 +10,11 @@
 				document.location.href = 'Stud_Feedback.aspx';
 				break;
 
+			case 'MenuTop.aspx':
+				//user come from stust homepage
+				document.location.href = 'https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx';
+				break;
+
 			case 'Stud_Feedback.aspx':
 				if ($("#ctl00_ContentPlaceHolder1_btnCancel").length == 0) {
 					//survey list
@@ -43,15 +48,14 @@
 				break;
 
 			default:
-				if (confirm('糟糕！我迷路啦( TДT)\n按確定後此分頁會自動關閉，請再重試一次\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
-					open(location, '_self').close();
-				}
 				break;
 		}
 		break;
 
 	default:
-		if (confirm('糟糕！我迷路啦( TДT)\n按確定後此分頁會自動關閉，請再重試一次\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
+		if (confirm('糟糕！我迷路啦( TДT)\n按確定自動重試，或按取消關閉分頁，請您手動重試\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
+			document.location.href = 'https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx';
+		}else{
 			open(location, '_self').close();
 		}
 		break;
