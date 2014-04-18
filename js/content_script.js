@@ -46,9 +46,9 @@
 				break;
 
 			default:
-				if (confirm('糟糕！程式迷路啦(´･ω･`)\n\n或許是學校系統改版了，請回報問題以利後續更新，感謝你！')) {
+				/*if (confirm('糟糕！程式迷路啦(´･ω･`)\n\n或許是學校系統改版了，請回報問題以利後續更新，感謝你！')) {
 					document.location.href = 'http://goo.gl/bWfLcG';
-				}
+				}*/
 				break;
 		}
 		break;
