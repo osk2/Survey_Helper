@@ -6,17 +6,15 @@
 	case 'eportal.stust.edu.tw':
 		switch (window.location.pathname.replace(/^.*\/([^/]*)/, "$1")) {
 			case 'MainPage.aspx':
-				//login page
 				document.location.href = 'Stud_Feedback.aspx';
 				break;
 
 			case 'MenuTop.aspx':
-				//user come from stust homepage
 				document.location.href = 'https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx';
 				break;
 
-			case 'Stud_Feedback.aspx':
-				if ($("#ctl00_ContentPlaceHolder1_btnCancel").length == 0) {
+			case 'Stud_FeedBack.aspx':
+				if ($("#ctl00_ContentPlaceHolder1_btnCancel").length === 0) {
 					//survey list
 					var count = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr').length,
 						target,
@@ -48,15 +46,14 @@
 				break;
 
 			default:
+				if (confirm('糟糕！程式迷路啦(´･ω･`)\n\n或許是學校系統改版了，請回報問題以利後續更新，感謝你！')) {
+					document.location.href = 'http://goo.gl/bWfLcG';
+				}
 				break;
 		}
 		break;
 
 	default:
-		if (confirm('糟糕！我迷路啦( TДT)\n按確定自動重試，或按取消關閉分頁，請您手動重試\n\n若問題持續發生，請至應用程式商店回報問題，感謝你！')) {
-			document.location.href = 'https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx';
-		}else{
-			open(location, '_self').close();
-		}
+		document.location.href = 'https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx';
 		break;
 }
