@@ -23,7 +23,7 @@
 					for (i = 0; i <= count; ++i) {
 						if (i === count) {
 							if (confirm('全部搞定啦！\n\n要帶你到成績查詢頁面嗎？A__A')) {
-								document.location.href = 'http://120.117.2.28/CourSel/Pages/PresentScore.aspx';
+								document.location.href = 'http://120.117.2.132/CourSel/Pages/PresentScore.aspx';
 							}
 							break;
 						}
@@ -46,9 +46,7 @@
 				break;
 
 			default:
-				/*if (confirm('糟糕！程式迷路啦(´･ω･`)\n\n或許是學校系統改版了，請回報問題以利後續更新，感謝你！')) {
-					document.location.href = 'http://goo.gl/bWfLcG';
-				}*/
+				
 				break;
 		}
 		break;
