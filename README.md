@@ -5,7 +5,7 @@ A Chrome extension to fill STUST teaching survey automatically.
 
 ## Changelog ##
 
-`v1.1.5`
+`v1.1.6`
 
 - bug fix
 
