@@ -22,7 +22,8 @@
     "content_scripts": [
         {
             "matches": ["https://eportal.stust.edu.tw/teaching_feedback/*","https://identity.stust.edu.tw/*"],
-            "js": ["./js/jquery-2.0.3.min.js","./js/content_script.js"],
+            "js": ["./js/jquery-2.0.3.min.js","./js/sweet-alert.min.js","./js/content_script.js"],
+            "css": ["css/sweet-alert.css"],
             "run_at": "document_end"
         }
     ],
