@@ -4,6 +4,13 @@ Survey Helper
 A Chrome extension to fill STUST teaching survey automatically. 
 
 ## Changelog ##
+
+`v1.2.2`
+
+- fix bug which cause script triggered twice
+
+- remove SweetAlert shown on log-in screen
+
 `v1.2.0`
 
 - replace confirm box with SweetAlert

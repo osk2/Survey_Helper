@@ -1,7 +1,7 @@
 ﻿{
 	"name": "問卷助手︰南台科大版",
 	"manifest_version": 2,
-	"version": "1.2.1", 
+	"version": "1.2.2", 
 	"description": "我給老師滿分！",
 	"icons": 
 	{
@@ -12,7 +12,6 @@
 	"background":
 	{
 		"page": "background.html",
-		"script": "js/background.js",
 		"persistent": true
 	},
 	"browser_action":
@@ -33,14 +32,13 @@
 		{
 			"matches":
 			[
-				"https://eportal.stust.edu.tw/teaching_feedback/*",
-				"https://identity.stust.edu.tw/*"
+				"https://eportal.stust.edu.tw/teaching_feedback/Stud_FeedBack.aspx?auto_survey=1"
 			],
 			"js":
 			[
 				"js/jquery-2.0.3.min.js",
 				"js/sweet-alert.min.js",
-				"js/content_script.js"
+				"js/content_script.min.js"
 			],
 			"css":
 			[
