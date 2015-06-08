@@ -3,7 +3,8 @@ Survey Helper
 
 A Chrome extension to fill STUST teaching survey automatically. 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/osk2/survey_helper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/osk2/survey_helper/trend.png)
+![shields Badge](https://img.shields.io/badge/license-GPLv2-blue.svg)
 
 ## Changelog ##
 
