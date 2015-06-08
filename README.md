@@ -30,3 +30,7 @@ A Chrome extension to fill STUST teaching survey automatically.
 ## License ##
 
 This software is licenced under the GNU v2. Please read LICENSE for information.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/osk2/survey_helper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
