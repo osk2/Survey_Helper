@@ -8,6 +8,10 @@ A Chrome extension to fill STUST teaching survey automatically.
 
 ## Changelog ##
 
+`v1.2.3`
+
+- adjust coding style
+
 `v1.2.2`
 
 - fix bug which cause script triggered twice
