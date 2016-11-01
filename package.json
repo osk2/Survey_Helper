@@ -3,6 +3,7 @@
   "version": "1.2.5",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-webstore-upload": "^0.9.4",

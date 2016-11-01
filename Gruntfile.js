@@ -32,16 +32,25 @@ module.exports = function(grunt) {
                     zip: '<%= pkg.name %>.zip'
                 }
             }
+        },
+        bump: {
+            options: {
+                files: ['package.json', 'manifest.json'],
+                commit: false,
+                createTag:false,
+                push: false
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-zip');
+    grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-webstore-upload');
 
     grunt.registerTask('default', ['jshint', 'uglify']);
     grunt.registerTask('pack', ['zip']);
-    grunt.registerTask('deploy', ['zip', 'webstore_upload']);
+    grunt.registerTask('deploy', ['bump', 'zip', 'webstore_upload']);
 
 };
