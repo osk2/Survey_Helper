@@ -8,6 +8,10 @@ A Chrome extension to fill STUST teaching survey automatically.
 
 ## Changelog ##
 
+`v1.2.5`
+
+- support Travis CI
+
 `v1.2.3`
 
 - adjust coding style

@@ -1,6 +1,4 @@
-﻿//ver 1.2.3
-
-var getParameter = function(param) {
+﻿var getParameter = function(param) {
 
     var pageURL = window.location.search.substring(1),
         URLVariables = pageURL.split('&');
