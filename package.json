@@ -5,12 +5,15 @@
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
-    "grunt-webstore-upload": "^0.9.4"
+    "grunt-webstore-upload": "^0.9.4",
+    "grunt-zip": "^0.17.1"
   },
   "description": "Survey Helper",
   "main": "js/content_script.js",
   "scripts": {
-    "build": "grunt"
+    "build": "grunt",
+    "pack": "grunt compress",
+    "deploy": "grunt deploy"
   },
   "repository": {
     "type": "git",
