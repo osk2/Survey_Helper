@@ -2,10 +2,9 @@
   "name": "survey_helper",
   "version": "1.2.3",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "^0.9.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-webstore-upload": "^0.9.4"
   },
   "description": "Survey Helper",
@@ -18,7 +17,7 @@
     "url": "git+https://github.com/osk2/Survey_Helper.git"
   },
   "author": "osk2",
-  "license": "GPL v2",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/osk2/Survey_Helper/issues"
   },
