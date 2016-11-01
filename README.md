@@ -1,7 +1,7 @@
-Survey Helper
+[Survey Helper] (https://goo.gl/sFIkpT)
 =============
 
-A Chrome extension to fill STUST teaching survey automatically. 
+A Chrome extension to fill STUST teaching survey automatically.
 
 ![shields Badge](https://img.shields.io/badge/license-GPLv2-blue.svg)
 [![Build Status](https://travis-ci.org/osk2/Survey_Helper.svg?branch=master)](https://travis-ci.org/osk2/Survey_Helper)
