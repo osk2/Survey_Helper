@@ -42,19 +42,6 @@ case 'eportal.stust.edu.tw':
 
             for (i = 0; i <= count; ++i) {
                 if (i === count) {
-                    swal({
-                        title: '全部搞定啦！',
-                        text: '要帶你到成績查詢頁面嗎？ლ(・´ｪ`・ლ)',
-                        showCancelButton: true,
-                        confirmButtonText: '走吧',
-                        confirmButtonColor: '#446CB3',
-                        cancelButtonText: '不了…',
-                        cancelButtonColor: '#2C3E50',
-                        type: 'success'
-                    },
-                    function() {
-                        document.location.href = 'http://120.117.2.132/CourSel/Pages/PresentScore.aspx';
-                    });
                     break;
                 }
                 target = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr:eq('+ i +')').find(':submit');
@@ -65,6 +52,19 @@ case 'eportal.stust.edu.tw':
                     break;
                 }
             }
+            swal({
+                title: '全部搞定啦！',
+                text: '要帶你到成績查詢頁面嗎？ლ(・´ｪ`・ლ)',
+                showCancelButton: true,
+                confirmButtonText: '走吧',
+                confirmButtonColor: '#446CB3',
+                cancelButtonText: '不了…',
+                cancelButtonColor: '#2C3E50',
+                type: 'success'
+            },
+            function() {
+                document.location.href = 'http://120.117.2.132/CourSel/Pages/PresentScore.aspx';
+            });
         }else{
             //in survey
             $(':radio[value=5]').prop('checked',true);
