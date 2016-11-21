@@ -1,5 +1,6 @@
 {
     "name": "問卷助手︰南台科大版",
+    "short_name": "問卷助手",
     "manifest_version": 2,
     "version": "1.2.5", 
     "description": "我給老師滿分！",
