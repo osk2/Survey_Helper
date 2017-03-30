@@ -1,6 +1,8 @@
 [Survey Helper] (https://goo.gl/sFIkpT)
 =============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/osk2/Survey_Helper.svg)](https://greenkeeper.io/)
+
 A Chrome extension to fill STUST teaching survey automatically.
 
 ![shields Badge](https://img.shields.io/badge/license-GPLv2-blue.svg)
