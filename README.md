@@ -1,6 +1,6 @@
 # Survey Helper
 
-A Chrome extension to fill STUST teaching survey automatically.
+🚀 Help to finish your STUST teaching survey in seconds.
 
 ![shields Badge](https://img.shields.io/badge/license-GPLv2-blue.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/osk2/Survey_Helper.svg)](https://greenkeeper.io/)
