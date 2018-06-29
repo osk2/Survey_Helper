@@ -46,5 +46,5 @@ https://chrome.google.com/webstore/detail/%E5%95%8F%E5%8D%B7%E5%8A%A9%E6%89%8B%E
 
 ## License ##
 
-This software is licenced under the GNU v2. Please read LICENSE for information.
+This software is licenced under the MIT. Please read [LICENSE](LICENSE) for detail.
 
