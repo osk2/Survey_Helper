@@ -7,7 +7,7 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^3.0.0",
     "grunt-webstore-upload": "^0.9.4",
-    "grunt-zip": "^0.17.1"
+    "grunt-zip": "^0.18.0"
   },
   "description": "Survey Helper",
   "main": "js/content_script.js",
