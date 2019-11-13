@@ -13,7 +13,7 @@
 
 switch (window.location.hostname) {
 case 'identity.stust.edu.tw':
-    //login first
+    // Follow redirect to login page
     break;
 
 case 'eportal.stust.edu.tw':
@@ -33,7 +33,7 @@ case 'eportal.stust.edu.tw':
         }
 
         if ($("#ctl00_ContentPlaceHolder1_btnCancel").length === 0) {
-            //survey list
+            // In survey list
             var count = $('#ctl00_ContentPlaceHolder1_dlPollStatus > tbody > tr').length,
                 target,
                 i;
@@ -64,7 +64,7 @@ case 'eportal.stust.edu.tw':
                 document.location.href = 'http://120.117.2.132/CourSel/Pages/PresentScore.aspx';
             });
         }else{
-            //in survey
+            // In survey page
             $(':radio[value=5]').prop('checked',true);
             if ($(':checkbox').length > 0) {
                 $(':checkbox').prop('checked',true);
@@ -74,12 +74,12 @@ case 'eportal.stust.edu.tw':
         break;
 
     default:
-        // the script only run when url match as specified in manifest, shouldn't have any exception here.
+        // This script only runs when url is matched as specified in manifest. It shouldn't have any exception here.
         break;
     }
     break;
 
 default:
-    // the script only run when url match as specified in manifest, shouldn't have any exception here.
+    // This script only runs when url is matched as specified in manifest. It shouldn't have any exception here.
     break;
 }
