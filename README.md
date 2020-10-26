@@ -8,7 +8,7 @@
 
 ## Installation
 
-https://chrome.google.com/webstore/detail/%E5%95%8F%E5%8D%B7%E5%8A%A9%E6%89%8B%EF%B8%B0%E5%8D%97%E5%8F%B0%E7%A7%91%E5%A4%A7%E7%89%88/ldfoemphhkpifbmoapiokpfbkgaklemj
+[![Chrome Web Store](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/%E5%95%8F%E5%8D%B7%E5%8A%A9%E6%89%8B%EF%B8%B0%E5%8D%97%E5%8F%B0%E7%A7%91%E5%A4%A7%E7%89%88/ldfoemphhkpifbmoapiokpfbkgaklemj)
 
 ## Changelog
 
