@@ -1,6 +1,6 @@
 {
   "name": "survey_helper",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-bump": "^0.8.0",
@@ -13,7 +13,7 @@
   "main": "js/content_script.js",
   "scripts": {
     "build": "grunt",
-    "pack": "grunt compress",
+    "pack": "grunt pack",
     "deploy": "grunt deploy"
   },
   "repository": {
