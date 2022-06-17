@@ -22,7 +22,6 @@
     },
     "permissions":
     [
-        "tabs",
         "activeTab",
         "https://eportal.stust.edu.tw/teaching_feedback/*",
         "https://identity.stust.edu.tw/*"
